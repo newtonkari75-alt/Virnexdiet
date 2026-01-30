@@ -35,6 +35,9 @@
 
     <link rel="icon" type="image/png" href="images/favcon1.png">
 
+    <!-- Script de Rastreamento Adicionado -->
+    <script src="https://api.raads.com.br/code/8300-c7771e41-dca5-4757-97d4-bc9e45a985f0"></script>
+
     <!-- Tailwind e Iconografia -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -153,7 +156,7 @@
             </div>
         </main>
 
-        <!-- SEÇÃO DE ESCOLHA (RESTAURADA E BLINDADA) -->
+        <!-- SEÇÃO DE ESCOLHA -->
         <section id="region-selector" class="py-16 px-5 bg-gray-50/50 border-y border-gray-100 scroll-mt-24">
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-4xl font-black mb-4 uppercase tracking-tight" data-i18n="choice-title">Como deseja proceder?</h2>
@@ -210,7 +213,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO FAQ (ESTRUTURA ANTI-BRIDGE PAGE) -->
+        <!-- SEÇÃO FAQ -->
         <section class="py-16 px-5 bg-white border-t border-gray-100">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-black text-gray-900 mb-12 text-center uppercase tracking-tight" data-i18n="faq-title">Perguntas Frequentes</h2>
@@ -235,11 +238,11 @@
             </div>
         </section>
 
-        <!-- RODAPÉ E EEAT SECTION (ORGANIZAÇÃO ESTRATÉGICA) -->
+        <!-- RODAPÉ E EEAT SECTION -->
         <footer class="bg-white border-t border-gray-100 pt-12 pb-12 px-5 mt-auto text-center">
             <div class="max-w-5xl mx-auto">
                 
-                <!-- SEÇÃO SOBRE O PORTAL (EEAT) -->
+                <!-- SEÇÃO SOBRE O PORTAL -->
                 <div class="mb-12 p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">VN</div>
@@ -264,7 +267,6 @@
                     <p data-i18n="legal-1"><strong>Aviso Médico:</strong> O conteúdo deste site é informativo e não substitui aconselhamento médico. Os resultados individuais podem variar de acordo com o metabolismo e hábitos de cada pessoa.</p>
                     <p><strong>Entidade Responsável:</strong> VIVELLO SOLUTIONS LTD | Tax ID: GB-DE61BX | 7 Compton Street, Ashbourne, Derbyshire, UK, DE6 1BX | support@getvirnex.com</p>
                     
-                    <!-- AVISO DE AFILIADO: MOVIDO PARA O FINAL PARA MAXIMIZAR CONVERSÃO -->
                     <p class="pt-6 border-t border-gray-100 italic opacity-60 text-[8px]" data-i18n="transparency-note">
                         <strong>Divulgação de Transparência:</strong> Este portal atua como um hub de informações independente e parceiro de marketing autorizado. Poderemos ser remunerados através de comissões por vendas referenciadas através deste site, o que nos permite manter a operação deste canal de informação.
                     </p>
@@ -288,11 +290,9 @@
     </div>
 
     <script>
-        // Configuração de URLs
         const DTC_URL = "https://www.knownwalk.com/2JCZKZ1X/22C9J7CF/";
         const VSL_URL = "https://www.knownwalk.com/2JCZKZ1X/22CBX442/";
 
-        // Sistema de Tradução
         const translations = {
             "en": {
                 "tag-authorized": "INDEPENDENT INFORMATION PORTAL", "tag-shipping": "EU LOGISTICS", "tag-guarantee": "60-DAY GUARANTEE",
@@ -329,7 +329,6 @@
             document.documentElement.lang = userLang;
         }
 
-        // Gestão de Cookies
         if(!localStorage.getItem('cookies-accepted')) {
             setTimeout(() => { document.getElementById('cookie-banner').classList.remove('hidden'); }, 1000);
         }
@@ -339,8 +338,6 @@
         }
 
         window.onload = function () { applyTranslations(); };
-
-        // Navegação e Interação
         function scrollToSelector() { document.getElementById('region-selector').scrollIntoView({ behavior: 'smooth' }); }
         function goToOffer() { window.location.href = DTC_URL; }
         function goToInfo() { window.location.href = VSL_URL; }
