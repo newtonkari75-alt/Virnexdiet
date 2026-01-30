@@ -126,58 +126,106 @@
                 </button>
 
                 <p class="mt-4 text-[10px] text-gray-400 italic text-center lg:text-left" data-i18n="disclaimer-hero">*Individual results depend on nutrition and exercise. Consult a specialist.</p>
+                
+                <!-- Restaurado: Lista de benefícios no Hero -->
+                <div class="hero-info w-full mt-8">
+                    <ul class="space-y-3 text-left w-full max-w-md mx-auto lg:mx-0">
+                        <li class="flex items-start gap-3 text-gray-700">
+                            <i class="fas fa-check-circle text-brand-primary mt-1 flex-shrink-0"></i>
+                            <span class="text-sm font-medium" data-i18n="bullet-1">Supports sustainable metabolic balance*</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700">
+                            <i class="fas fa-check-circle text-brand-primary mt-1 flex-shrink-0"></i>
+                            <span class="text-sm font-medium" data-i18n="bullet-2">Produced under strict quality standards in Germany</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700">
+                            <i class="fas fa-check-circle text-brand-primary mt-1 flex-shrink-0"></i>
+                            <span class="text-sm font-medium" data-i18n="bullet-3">60-day satisfaction window protected by manufacturer</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </main>
 
-        <!-- SEÇÃO FAQ (ESTRUTURA ANTI-BRIDGE PAGE) -->
-        <section class="py-12 px-5 bg-white border-t border-gray-100">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-2xl font-black text-gray-900 mb-8 text-center uppercase tracking-tight" data-i18n="faq-title">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div class="border-b border-gray-100 pb-4">
-                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q1-t">How does Virnex® support the body?</h3>
-                        <p class="text-sm text-gray-600" data-i18n="q1-a">The formula uses botanical extracts that help maintain metabolic balance when combined with a calorie-controlled diet.</p>
+        <!-- SEÇÃO DE ESCOLHA (RESTAURADA COM BULLETS) -->
+        <section id="region-selector" class="py-16 px-5 bg-gray-50 border-y border-gray-100 scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-black mb-4 uppercase tracking-tight" data-i18n="choice-title">How to Proceed?</h2>
+                <p class="text-gray-500 font-medium max-w-2xl mx-auto" data-i18n="choice-subtitle">Select the path that best fits your current research phase.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- OPÇÃO 1: COMPRA DIRETA (RESTAURADO) -->
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 flex flex-col transform transition hover:shadow-2xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-brand-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt1-title">1. Start the Program</h3>
                     </div>
-                    <div class="border-b border-gray-100 pb-4">
-                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q2-t">Is there a guarantee?</h3>
-                        <p class="text-sm text-gray-600" data-i18n="q2-a">Yes, the manufacturer offers a 60-day satisfaction window for all orders placed through the official channel.</p>
+                    <div class="flex-1">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="opt1-text">
+                            Choose this option if you already know the product. You’ll get immediate access to the official Virnex® portal with EU delivery and secure checkout.
+                        </p>
+                        <!-- Restaurado: Lista detalhada Opção 1 -->
+                        <ul class="mb-8 space-y-2 text-[11px] text-gray-500 font-bold uppercase">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt1-b1">Immediate access with EU delivery</span></li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt1-b2">Secure and encrypted checkout</span></li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt1-b3">Full 60-day satisfaction guarantee</span></li>
+                        </ul>
                     </div>
+                    <button onclick="goToOffer()" class="w-full bg-brand-primary text-white py-5 rounded-2xl font-black text-lg uppercase shadow-lg hover-bg-brand-primary transition" data-i18n="btn-opt1">
+                        Go to Official Store
+                    </button>
+                </div>
+
+                <!-- OPÇÃO 2: QUIZ (RESTAURADO) -->
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-primary p-8 flex flex-col transform transition hover:shadow-2xl relative">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center">
+                            <i class="fas fa-clipboard-list text-brand-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt2-title">2. Check Compatibility</h3>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="opt2-text">
+                            This short assessment helps determine whether Virnex® fits your nutritional goals and routine. It takes less than 2 minutes.
+                        </p>
+                        <!-- Restaurado: Lista detalhada Opção 2 -->
+                        <ul class="mb-8 space-y-2 text-[11px] text-gray-500 font-bold uppercase">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt2-b1">Personalized recommendation</span></li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt2-b2">No obligation or pressure</span></li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-primary"></i> <span data-i18n="opt2-b3">Informed decision first</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="goToInfo()" class="w-full border-2 border-brand-primary text-brand-primary py-5 rounded-2xl font-black text-lg uppercase hover:bg-brand-primary/5 transition" data-i18n="btn-opt2">
+                        Start Free Quiz
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO DE ESCOLHA -->
-        <section id="region-selector" class="py-16 px-5 bg-gray-50 border-y border-gray-100 scroll-mt-24">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl lg:text-4xl font-black mb-4 uppercase tracking-tight" data-i18n="choice-title">How to Proceed</h2>
-                <p class="text-gray-500 font-medium max-w-2xl mx-auto" data-i18n="choice-subtitle">Select the option that best fits your current research phase.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 flex flex-col transform transition hover:shadow-2xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <i class="fas fa-shopping-cart text-brand-primary text-xl"></i>
-                        <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt1-title">Direct Purchase</h3>
+        <!-- SEÇÃO FAQ EXPANDIDA (ESTRUTURA ANTI-BRIDGE PAGE) -->
+        <section class="py-16 px-5 bg-white border-t border-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-black text-gray-900 mb-12 text-center uppercase tracking-tight" data-i18n="faq-title">Frequently Asked Questions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border-b border-gray-100 pb-4">
+                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q1-t">Is Virnex® a medicine?</h3>
+                        <p class="text-sm text-gray-600" data-i18n="q1-a">No, it is a plant-based nutritional supplement designed to support dietary balance, not to diagnose or treat diseases.</p>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-1" data-i18n="opt1-text">
-                        If you have already done your research and want to take advantage of current EU offers with secure shipping.
-                    </p>
-                    <button onclick="goToOffer()" class="w-full bg-brand-primary text-white py-5 rounded-2xl font-black text-lg uppercase shadow-lg hover-bg-brand-primary transition" data-i18n="btn-opt1">
-                        Go to Official Shop
-                    </button>
-                </div>
-
-                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-primary p-8 flex flex-col transform transition hover:shadow-2xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <i class="fas fa-clipboard-list text-brand-primary text-xl"></i>
-                        <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt2-title">Eligibility Quiz</h3>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q2-t">What is the return policy?</h3>
+                        <p class="text-sm text-gray-600" data-i18n="q2-a">The manufacturer provides a 60-day window. If you are not satisfied, you can contact their support for a refund as per their terms.</p>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-1" data-i18n="opt2-text">
-                        Not sure yet? Answer 4 quick questions to see if the formula matches your profile and expectations.
-                    </p>
-                    <button onclick="goToInfo()" class="w-full border-2 border-brand-primary text-brand-primary py-5 rounded-2xl font-black text-lg uppercase hover:bg-brand-primary/5 transition" data-i18n="btn-opt2">
-                        Start Quick Check
-                    </button>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q3-t">How long for delivery?</h3>
+                        <p class="text-sm text-gray-600" data-i18n="q3-a">Typical EU shipping takes 3-7 business days depending on the specific region and local logistics.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h3 class="font-bold text-gray-800 mb-2" data-i18n="q4-t">Who should avoid it?</h3>
+                        <p class="text-sm text-gray-600" data-i18n="q4-a">Pregnant women, nursing mothers, and individuals with pre-existing medical conditions should consult a doctor before use.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -185,7 +233,6 @@
         <!-- RODAPÉ E EEAT SECTION -->
         <footer class="bg-white border-t border-gray-100 pt-12 pb-12 px-5 mt-auto text-center">
             <div class="max-w-5xl mx-auto">
-                <!-- EEAT SECTION (VALOR ÚNICO) -->
                 <div class="mb-12 p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">VN</div>
@@ -195,24 +242,24 @@
                         </div>
                     </div>
                     <p class="text-[10px] text-gray-600 leading-relaxed" data-i18n="about-portal">
-                        Our portal is dedicated to providing high-quality information about nutritional supplements. We analyze manufacturer data and user feedback to offer a clear perspective on available options in the EU market.
+                        Our portal is dedicated to providing high-quality information about nutritional supplements. We analyze manufacturer data and user feedback to offer a clear perspective on available options in the EU market. We act as an independent reviewer and authorized marketing partner.
                     </p>
                 </div>
 
                 <nav class="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-                    <button onclick="openModal('envio')" data-i18n="nav-shipping">Shipping</button>
-                    <button onclick="openModal('termos')" data-i18n="nav-terms">Terms</button>
+                    <button onclick="openModal('envio')" data-i18n="nav-shipping">Shipping Policy</button>
+                    <button onclick="openModal('termos')" data-i18n="nav-terms">Terms of Use</button>
                     <button onclick="openModal('privacidade')" data-i18n="nav-privacy">Privacy</button>
                     <button onclick="openModal('contato')" data-i18n="nav-support">Support</button>
                 </nav>
 
                 <div class="max-w-4xl mx-auto text-[9px] text-gray-400 leading-relaxed space-y-4 mb-10">
-                    <p data-i18n="legal-1"><strong>Important Disclaimer:</strong> This portal is an independent information site and acts as a referral partner. Content is not medical advice. Always consult a healthcare professional before starting any supplement.</p>
-                    <p><strong>Entity:</strong> VIVELLO SOLUTIONS LTD | Tax ID: GB-DE61BX | 7 Compton Street, Ashbourne, Derbyshire, UK, DE6 1BX | support@getvirnex.com</p>
+                    <p data-i18n="legal-1"><strong>Independent Disclosure:</strong> This portal is a referral site. We may receive commissions for purchases made through our links. This does not affect our content integrity. Not medical advice.</p>
+                    <p><strong>Corporate Identity:</strong> VIVELLO SOLUTIONS LTD | Tax ID: GB-DE61BX | 7 Compton Street, Ashbourne, Derbyshire, UK, DE6 1BX | support@getvirnex.com</p>
                 </div>
 
                 <div class="text-[9px] text-gray-400 uppercase tracking-tighter opacity-40">
-                    © 2026 Virnex® Info Hub. All rights reserved.
+                    © 2026 Virnex® Info Hub. All rights reserved. Not affiliated with Google/Meta.
                 </div>
             </div>
         </footer>
@@ -222,7 +269,7 @@
             <div class="bg-white rounded-3xl shadow-2xl w-full max-w-3xl max-h-[85vh] flex flex-col overflow-hidden">
                 <div class="p-8 md:p-12 overflow-y-auto modal-body" id="modal-content"></div>
                 <div class="p-4 bg-gray-50 border-t flex justify-end">
-                    <button onclick="closeModal()" class="bg-brand-primary text-white px-8 py-2 rounded-lg font-bold uppercase text-xs tracking-widest" data-i18n="btn-modal-close">Close</button>
+                    <button onclick="closeModal()" class="bg-brand-primary text-white px-8 py-2 rounded-lg font-bold uppercase text-xs tracking-widest" data-i18n="btn-modal-close">Understood</button>
                 </div>
             </div>
         </div>
@@ -237,13 +284,19 @@
                 "tag-authorized": "INDEPENDENT INFORMATION PORTAL", 
                 "headline": "Sustainable Weight Management Support <br class='hidden lg:block'> <span class='text-brand-primary underline decoration-gray-100'>Through Natural Nutrition.</span>",
                 "subheadline": "Virnex® is a plant-based complex designed to complement a healthy lifestyle. Our portal provides information to help you understand if this formula aligns with your nutritional goals.",
+                "bullet-1": "Supports sustainable metabolic balance*", "bullet-2": "Produced under strict quality standards in Germany", "bullet-3": "60-day satisfaction window protected by manufacturer",
                 "btn-cta-hero": "View Official Product Details",
                 "faq-title": "Frequently Asked Questions",
-                "q1-t": "How does Virnex® support the body?", "q1-a": "The formula uses botanical extracts that help maintain metabolic balance when combined with a calorie-controlled diet.",
-                "q2-t": "Is there a guarantee?", "q2-a": "Yes, the manufacturer offers a 60-day satisfaction window for all orders placed through the official channel.",
-                "opt1-title": "Direct Purchase", "btn-opt1": "Go to Official Shop",
-                "opt2-title": "Eligibility Quiz", "btn-opt2": "Start Quick Check",
-                "cookie-text": "This portal uses essential and analytical cookies. We act as an independent information provider. By continuing, you agree to our policies.",
+                "q1-t": "Is Virnex® a medicine?", "q1-a": "No, it is a plant-based nutritional supplement designed to support dietary balance.",
+                "q2-t": "What is the return policy?", "q2-a": "The manufacturer provides a 60-day window for refunds through their official support.",
+                "q3-t": "How long for delivery?", "q3-a": "Typical EU shipping takes 3-7 business days depending on the region.",
+                "q4-t": "Who should avoid it?", "q4-a": "Pregnant women and individuals with medical conditions should consult a doctor first.",
+                "opt1-title": "1. Start the Program", "opt1-text": "Choose this option if you already know the product. You’ll get immediate access to the official portal.",
+                "opt1-b1": "Immediate access with EU delivery", "opt1-b2": "Secure and encrypted checkout", "opt1-b3": "Full 60-day satisfaction guarantee",
+                "opt2-title": "2. Check Compatibility", "opt2-text": "This short assessment helps determine whether Virnex® fits your nutritional goals. It takes less than 2 minutes.",
+                "opt2-b1": "Personalized recommendation", "opt2-b2": "No obligation or pressure", "opt2-b3": "Informed decision first",
+                "btn-opt1": "Go to Official Store", "btn-opt2": "Start Free Quiz",
+                "cookie-text": "This portal uses essential and analytical cookies. We act as an independent information provider.",
                 "btn-accept": "Accept and Continue"
             }
         };
