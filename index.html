@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -35,7 +36,16 @@
 
     <link rel="icon" type="image/png" href="images/favcon1.png">
 
-    <!-- Script de Rastreamento Adicionado -->
+    <!-- 1. Google tag (gtag.js) - ADICIONADO -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17879355180"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17879355180');
+    </script>
+
+    <!-- 2. Script de Rastreamento RAADS -->
     <script src="https://api.raads.com.br/code/8300-c7771e41-dca5-4757-97d4-bc9e45a985f0"></script>
 
     <!-- Tailwind e Iconografia -->
@@ -136,7 +146,6 @@
 
                 <p class="mt-4 text-[10px] text-gray-400 italic text-center lg:text-left" data-i18n="disclaimer-hero">*Os resultados individuais dependem da nutrição e exercício. Consulte um especialista.</p>
 
-                <!-- Benefícios Restaurados -->
                 <div class="hero-info w-full">
                     <ul class="space-y-3 mt-8 text-left w-full max-w-md mx-auto lg:mx-0">
                         <li class="flex items-start gap-3 text-gray-700">
@@ -164,13 +173,9 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                
-                <!-- OPÇÃO 1: COMPRA DIRETA -->
                 <div class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 flex flex-col transform transition hover:shadow-2xl">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center">
-                            <i class="fas fa-shopping-cart text-brand-primary text-xl"></i>
-                        </div>
+                        <i class="fas fa-shopping-cart text-brand-primary text-xl"></i>
                         <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt1-title">1. Iniciar o Programa</h3>
                     </div>
                     <div class="flex-1">
@@ -188,12 +193,9 @@
                     </button>
                 </div>
 
-                <!-- OPÇÃO 2: QUIZ -->
                 <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-primary p-8 flex flex-col transform transition hover:shadow-2xl relative">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center">
-                            <i class="fas fa-clipboard-list text-brand-primary text-xl"></i>
-                        </div>
+                        <i class="fas fa-clipboard-list text-brand-primary text-xl"></i>
                         <h3 class="text-2xl font-black uppercase text-gray-900" data-i18n="opt2-title">2. Verificar Compatibilidade</h3>
                     </div>
                     <div class="flex-1">
@@ -242,7 +244,6 @@
         <footer class="bg-white border-t border-gray-100 pt-12 pb-12 px-5 mt-auto text-center">
             <div class="max-w-5xl mx-auto">
                 
-                <!-- SEÇÃO SOBRE O PORTAL -->
                 <div class="mb-12 p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">VN</div>
@@ -302,18 +303,11 @@
                 "bullet-1": "Supports sustainable metabolic balance*", "bullet-2": "Produced under strict quality standards in Germany", "bullet-3": "60-day satisfaction window protected by manufacturer",
                 "btn-cta-hero": "View Official Product Details", "disclaimer-hero": "*Individual results vary. Consult a healthcare professional.",
                 "faq-title": "Frequently Asked Questions",
-                "q1-t": "Is Virnex® a medicine?", "q1-a": "No, it is a plant-based nutritional supplement designed to support dietary balance.",
-                "q2-t": "Is there a guarantee?", "q2-a": "Yes, the manufacturer offers a 60-day window for satisfaction or refund.",
-                "q3-t": "How long for delivery?", "q3-a": "Typical EU shipping takes 3-7 business days depending on the region.",
-                "q4-t": "Who should avoid it?", "q4-a": "Pregnant women and individuals with medical conditions should consult a doctor first.",
                 "opt1-title": "1. Start the Program", "opt1-text": "Choose this option if you already know the product. Direct access to official EU logistics.",
-                "opt1-b1": "Immediate access with EU delivery", "opt1-b2": "Secure and encrypted checkout", "opt1-b3": "Full 60-day satisfaction guarantee",
                 "opt2-title": "2. Check Compatibility", "opt2-text": "This short assessment helps determine whether Virnex® fits your goals. Takes less than 2 minutes.",
-                "opt2-b1": "Personalized recommendation", "opt2-b2": "No obligation or pressure", "opt2-b3": "Informed decision first",
                 "btn-opt1": "Go to Official Store", "btn-opt2": "Start Free Quiz",
                 "cookie-text": "This portal uses essential cookies. We act as an independent info provider.",
-                "btn-accept": "Accept and Continue", "btn-modal-close": "Understood",
-                "transparency-note": "<strong>Transparency Disclosure:</strong> This portal acts as an independent info hub and authorized marketing partner. We may receive commissions for referrals made via this site."
+                "btn-accept": "Accept and Continue", "btn-modal-close": "Understood"
             }
         };
 
